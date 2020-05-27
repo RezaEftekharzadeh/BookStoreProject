@@ -17,7 +17,7 @@ public class CreateUserDemo {
 		try {
 
 			System.out.println("creating new student object");
-			Users tempUsers = new Users("eeeeef@g.com", "eric.eft", "12355");
+			Users tempUsers = new Users("gtttgf@g.com", "eript", "0000");
 
 			session.beginTransaction();
 			session.save(tempUsers);
