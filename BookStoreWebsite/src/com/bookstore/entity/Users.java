@@ -2,15 +2,39 @@ package com.bookstore.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class User {
+@Table(name="users")
+public class Users {
+	@Column(name = "user_id")
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer userId;
+
+	@Column(name = "email")
 	private String email;
+
+	@Column(name = "full_name")
 	private String fullName;
+
+	@Column(name = "password")
 	private String password;
 
-	@Column(name = "user_id")
+	public Users() {
+
+	}
+
+	public Users(String email, String fullName, String password) {
+		super();
+		this.email = email;
+		this.fullName = fullName;
+		this.password = password;
+	}
+
 	public Integer getUserId() {
 		return userId;
 	}
@@ -27,7 +51,6 @@ public class User {
 		this.email = email;
 	}
 
-	@Column(name = "full_name")
 	public String getFullName() {
 		return fullName;
 	}
