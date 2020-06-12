@@ -1,9 +1,11 @@
 package com.bookstore.entity;
-// Generated May 27, 2020 11:13:08 PM by Hibernate Tools 5.2.12.Final
+// Generated May 27, 2020 11:27:52 PM by Hibernate Tools 5.2.12.Final
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -30,8 +32,7 @@ public class Users implements java.io.Serializable {
 	}
 
 	@Id
-	@GeneratedValue(strategy = IDENTITY)
-
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "user_id", unique = true, nullable = false)
 	public Integer getUserId() {
 		return this.userId;
@@ -66,6 +67,11 @@ public class Users implements java.io.Serializable {
 
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
+	}
+
+	@Override
+	public String toString() {
+		return "Users [email=" + email + ", password=" + password + ", fullName=" + fullName + "]";
 	}
 
 }

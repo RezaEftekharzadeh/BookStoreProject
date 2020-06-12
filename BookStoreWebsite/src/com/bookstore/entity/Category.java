@@ -1,5 +1,5 @@
 package com.bookstore.entity;
-// Generated May 27, 2020 11:13:08 PM by Hibernate Tools 5.2.12.Final
+// Generated Jun 12, 2020 11:40:36 AM by Hibernate Tools 5.2.12.Final
 
 import java.util.HashSet;
 import java.util.Set;
@@ -19,17 +19,17 @@ public class Category implements java.io.Serializable {
 
 	private int categoryId;
 	private String name;
-	private Set books = new HashSet(0);
+	private Set<Book> books = new HashSet<Book>(0);
 
 	public Category() {
 	}
 
-	public Category(int categoryId, String name) {
-		this.categoryId = categoryId;
+	public Category(String name) {
+		
 		this.name = name;
 	}
 
-	public Category(int categoryId, String name, Set books) {
+	public Category(int categoryId, String name, Set<Book> books) {
 		this.categoryId = categoryId;
 		this.name = name;
 		this.books = books;
@@ -46,7 +46,7 @@ public class Category implements java.io.Serializable {
 		this.categoryId = categoryId;
 	}
 
-	@Column(name = "NAME", nullable = false, length = 30)
+	@Column(name = "name", nullable = false, length = 30)
 	public String getName() {
 		return this.name;
 	}
@@ -56,11 +56,11 @@ public class Category implements java.io.Serializable {
 	}
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "category")
-	public Set getBooks() {
+	public Set<Book> getBooks() {
 		return this.books;
 	}
 
-	public void setBooks(Set books) {
+	public void setBooks(Set<Book> books) {
 		this.books = books;
 	}
 
