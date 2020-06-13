@@ -2399,3 +2399,18 @@ org.eclipse.core.runtime.CoreException: Launch configuration UserTest (1) refere
 2020-06-12 13:13:59,532 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\main\resources
 2020-06-12 13:13:59,534 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-06-12 13:13:59,535 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\test\resources
+2020-06-13 12:01:18,179 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-06-13 12:01:26,567 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 12:01:26,597 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\main\resources
+2020-06-13 12:01:26,597 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 12:01:26,605 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\test\resources
+2020-06-13 13:51:57,105 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 13:51:57,113 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\main\resources
+2020-06-13 13:51:57,114 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 13:51:57,114 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\test\resources
+2020-06-13 13:52:18,280 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 13:52:18,280 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\main\resources
+2020-06-13 13:52:18,280 [Worker-20: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 13:52:18,308 [Worker-20: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\test\resources
+2020-06-13 14:08:11,861 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-06-13 14:08:11,863 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\BookStoreProject\BookStoreWebsite\src\main\resources
