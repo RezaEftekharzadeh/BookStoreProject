@@ -10,7 +10,7 @@ import com.bookstore.entity.Users;
 public class CategoryTest {
 
 	public static void main(String[] args) {
-		Category cat1=new Category("J2EE");
+		Category cat1=new Category("Java Enterprise");
 		
 		
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
