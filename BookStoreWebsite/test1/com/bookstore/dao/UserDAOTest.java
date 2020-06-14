@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceException;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -40,9 +41,12 @@ public class UserDAOTest {
 		assertTrue(user1.getUserId()>0);
 	}
 	
-	@Test
+	@Test(expected = PersistenceException.class)
 	public void testCreateUserNotNull() {
 		
+		Users user1=new Users();
+		
+		user1= userDao.create(user1);
 		
 	}
 	
