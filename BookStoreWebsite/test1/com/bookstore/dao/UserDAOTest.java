@@ -27,6 +27,7 @@ public class UserDAOTest {
 		
 		 userDao=new UserDAO(entityManager);
 	}
+	
 
 	@Test
 	public void testCreateUsers() {
@@ -41,15 +42,27 @@ public class UserDAOTest {
 		assertTrue(user1.getUserId()>0);
 	}
 	
+	
 	@Test(expected = PersistenceException.class)
 	public void testCreateUserNotNull() {
 		
 		Users user1=new Users();
 		
 		user1= userDao.create(user1);
-		
 	}
 	
+	@Test
+	public void testUpdateUser() {
+		
+		Users user=new Users();
+		
+		user.setEmail("test1@gmail.com");
+		user.setFullName("eric.eft");
+		user.setPassword("12345");
+		user.setUserId(4);
+		
+		user= userDao.update(user);
+	}
 	
 	
 	@AfterClass
@@ -57,6 +70,7 @@ public class UserDAOTest {
 		entityManager.close();
 		entityManagerFactory.close();
 	}
+	
 	
 	
 	
