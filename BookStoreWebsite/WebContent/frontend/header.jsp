@@ -1,9 +1,11 @@
-<div align="center">
 
- 	<div>
- 		<img  src="images/header.png"  width="500" height="70" align="center"/>
+
+ 	<div align="center">
+ 		<img  src="../images/header.png" />
   	</div>
+  	
   	<br><br>
+  	
   	<div>
   		<input type="text" name="keyword" size="55" />
   		<input type="button" value="Search" />
@@ -14,4 +16,3 @@
   		<a href="view_cart">Cart</a> 
   	</div>
 
-</div>

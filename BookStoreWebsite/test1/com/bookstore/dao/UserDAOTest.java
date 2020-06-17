@@ -65,6 +65,22 @@ public class UserDAOTest {
 	}
 	
 	
+	@Test
+	public void testGetUsersFound() {
+		Integer userId=4;
+		Users user=userDao.get(userId);
+		System.out.println(user.getEmail());
+		assertNotNull(user);
+	}
+	
+	@Test
+	public void testGetUsesNotNull() {
+		Integer userId=99;
+		Users user=userDao.get(userId);
+		
+		assertNull(user);
+	}
+	
 	@AfterClass
 	public static void tearDown() {
 		entityManager.close();

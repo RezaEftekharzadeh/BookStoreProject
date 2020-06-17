@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:include page="header.jsp" />
+
+	<jsp:directive.include file="header.jsp" />
 	
 	<div align="center">
 	<form>
@@ -21,7 +22,7 @@
 	</form>
 	</div>
 
-		<jsp:include page="footer.jsp" />
+		<jsp:directive.include file="footer.jsp" />
 
 </body>
 </html>
